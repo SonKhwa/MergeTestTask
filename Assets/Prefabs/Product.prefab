@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8908591792763584172}
   - component: {fileID: 8908591792763584171}
   - component: {fileID: 8417334372554209569}
+  - component: {fileID: 4127235073660112787}
   m_Layer: 5
   m_Name: Product
   m_TagString: Untagged
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f4c439e51196bcb4ca44882fd682a79a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4612dab1665968d4e975213cba2acdc1, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -89,5 +90,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b0d6bf73f20d50498cb881350b15767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  storingObjectInfo: {fileID: 11400000, guid: 8660377218af5c84080118f059e7ea0b, type: 2}
   image: {fileID: 8908591792763584171}
-  itemInfo: {fileID: 0}
+--- !u!114 &4127235073660112787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8908591792763584168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ef7859eb2520148bdbb89e2dfb56db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTimeInSeconds: 5

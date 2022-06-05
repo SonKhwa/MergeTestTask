@@ -5,13 +5,12 @@ using UnityEngine.EventSystems;
 
 namespace miniit.MERGE
 {
-    public class MixableItemsInto : GrabbableItem
+    public class MixableItemsInto : GrabbableStoringObject
     {
         public override void OnDrop(PointerEventData eventData)
         {
-            Debug.Log("OnDrop");
             GameObject other = eventData.pointerDrag;
-            if (other is not null)
+            if (other is not null && (place.StoringObject is null || other != place.StoringObject.gameObject))
             {
                 Item otherItem = other.GetComponent<Item>();
                 if (otherItem is not null)
@@ -19,38 +18,49 @@ namespace miniit.MERGE
                     if (IsFilled())
                     {
                         Debug.Log("Is filled!");
-                        if (TryMixItems(itemPlace.StoringItem, otherItem) == false)
+                        Item thatItem = place.StoringObject.GetComponent<Item>();
+                        if (thatItem is null)
                         {
-                            return;
+                            Debug.Log("Storing object is not Item!");
+                        }
+                        else if (TryMixItems(place.StoringObject.GetComponent<Item>(), otherItem) is true)
+                        {
+                            StoreObject(otherItem);
                         }
                     }
-
-                    Debug.Log("Is not filled!");
-                    StoreItem(otherItem);
+                    else
+                    {
+                        Debug.Log("Is not filled!");
+                        StoreObject(otherItem);
+                    }
+                }
+                else
+                {
+                    Debug.Log("Both must be items!");
                 }
             }
         }
 
         private bool TryMixItems(Item thatItem, Item otherItem)
         {
-            ItemInfo thatItemInfo = thatItem.ItemInfo;
-            ItemInfo otherItemInfo = otherItem.ItemInfo;
+            StoringObjectInfo thatobjectInfo = thatItem.StoringObjectInfo;
+            StoringObjectInfo otherobjectInfo = otherItem.StoringObjectInfo;
 
-            CombinationInfo combination = TryFindCombination(thatItemInfo, otherItemInfo);
+            CombinationInfo combination = TryFindCombination(thatobjectInfo, otherobjectInfo);
             if (combination is null)
             {
-                Debug.Log("Not such combination! " + thatItemInfo.name + " " + otherItemInfo.name);
+                Debug.Log("Not such combination! " + thatobjectInfo.name + " " + otherobjectInfo.name);
                 return false;
             }
 
-            Debug.Log("Success combination! " + thatItemInfo.name + " + " + otherItemInfo.name + " = " + combination.Result.name);
+            Debug.Log("Success combination! " + thatobjectInfo.name + " + " + otherobjectInfo.name + " = " + combination.Result.name);
             MixItems(thatItem, otherItem, combination);
             return true;
         }
 
-        private CombinationInfo TryFindCombination(ItemInfo thatItemInfo, ItemInfo otherItemInfo)
+        private CombinationInfo TryFindCombination(StoringObjectInfo thatobjectInfo, StoringObjectInfo otherobjectInfo)
         {
-            return thatItemInfo.FindCombination(otherItemInfo);
+            return thatobjectInfo.FindCombination(otherobjectInfo);
         }
 
         /// <summary>
@@ -63,12 +73,7 @@ namespace miniit.MERGE
         private void MixItems(Item thatItem, Item otherItem, CombinationInfo combination)
         {
             DestroyImmediate(thatItem.gameObject);
-            ChangeItemInfo(otherItem, combination.Result);
-        }
-
-        private void ChangeItemInfo(Item otherItem, ItemInfo result)
-        {
-            otherItem.ItemInfo = result;
+            otherItem.StoringObjectInfo = combination.Result;
         }
     }
 }

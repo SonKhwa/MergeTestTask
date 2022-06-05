@@ -6,51 +6,26 @@ using UnityEngine.UI;
 
 namespace miniit.MERGE
 {
-    public class ProductPlace : ItemPlace, IConvertableItemToProduct, ICreatable
+    public class ProductPlace : ConvertablePlace<Product> 
     {
-        [SerializeField] GameObject prefab;
-
-        public override Item StoringItem
+        public override StoringObject StoringObject
         {
-            get => storingItem;
+            get => storingObject;
             set
             {
-                storingItem = value;
+                storingObject = value;
                 if (value is not null)
                 {
-                    storingItem.ItemPlace = this;
+                    storingObject.Place = this;
                     AnchorItem();
-                    if (storingItem is not Product)
+
+                    if (storingObject is not Product)
                     {
-                        ChangeItemToProduct();
+                        Debug.Log("Converting " + storingObject + " to " + " Product!");
+                        ConvertObject();
                     }
                 }
             }
         }
-
-        #region IConvertableItemToProduct implementation
-
-        public void ChangeItemToProduct()
-        {
-            GameObject previousItem = StoringItem.gameObject;
-            CreateGameObject();
-            DestroyImmediate(previousItem);
-        }
-
-        #endregion
-
-        #region ICreatable implementation
-
-        public void CreateGameObject()
-        {
-            GameObject productInstance = Instantiate(prefab, rectTransform.position, rectTransform.rotation, rectTransform.parent);
-
-            ItemInfo itemInfo = StoringItem.ItemInfo;
-            StoringItem = productInstance.GetComponent<Product>();
-            StoringItem.ItemInfo = itemInfo;
-            StoringItem.ItemPlace = this;
-        }
-
-        #endregion
     }
 }

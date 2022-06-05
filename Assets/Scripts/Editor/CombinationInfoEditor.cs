@@ -34,9 +34,9 @@ namespace miniit.MERGE
             if (serializedPropertyParts.arraySize < 2 || serializedPropertyResult.boxedValue is null)
                 return;
 
-            ItemInfo part1 = serializedPropertyParts.GetArrayElementAtIndex(0).boxedValue as ItemInfo;
-            ItemInfo part2 = serializedPropertyParts.GetArrayElementAtIndex(1).boxedValue as ItemInfo;
-            ItemInfo part3 = serializedPropertyResult.boxedValue as ItemInfo;
+            StoringObjectInfo part1 = serializedPropertyParts.GetArrayElementAtIndex(0).boxedValue as StoringObjectInfo;
+            StoringObjectInfo part2 = serializedPropertyParts.GetArrayElementAtIndex(1).boxedValue as StoringObjectInfo;
+            StoringObjectInfo part3 = serializedPropertyResult.boxedValue as StoringObjectInfo;
 
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.ColorField(part1.Color);

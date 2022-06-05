@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace miniit.MERGE
 {
-    [CreateAssetMenu(fileName = "ItemInfo", menuName = "My Scriptable Objects/ItemInfo")]
-    public class ItemInfo : ScriptableObject
+    [CreateAssetMenu(fileName = "storingObjectInfo", menuName = "My Scriptable Objects/storingObjectInfo")]
+    public class StoringObjectInfo : ScriptableObject
     {
         [SerializeField] private int level = 1;
         [SerializeField] private Color color = Color.black;
@@ -38,11 +38,11 @@ namespace miniit.MERGE
             set => productImage = value;
         }
 
-        public CombinationInfo FindCombination(ItemInfo otherItem)
+        public CombinationInfo FindCombination(StoringObjectInfo otherItem)
         {
             foreach (CombinationInfo combination in combinations)
             {
-                if (combination.Equals(new ItemInfo[2] {this, otherItem}))
+                if (combination.Equals(new StoringObjectInfo[2] {this, otherItem}))
                 {
                     return combination;
                 }

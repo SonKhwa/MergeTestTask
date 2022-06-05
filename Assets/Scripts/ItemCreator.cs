@@ -5,18 +5,18 @@ using UnityEngine.UI;
 
 namespace miniit.MERGE
 {
-    public class ItemCreator : MonoBehaviour, IColorableByItem, ICreatable
+    public class ItemCreator : MonoBehaviour, IColorableByStoringObjectInfo, ICreatable
     {
         [SerializeField] private Image image;
         [SerializeField] private RectTransform rectTransform;
         [SerializeField] private RectTransform ItemContainerAsParent;
         [SerializeField] private GameObject prefab;
-        [SerializeField] private ItemInfo itemInfo;
+        [SerializeField] private StoringObjectInfo objectInfo;
         [SerializeField] private float intensity = 0.5f;
 
         private void Start()
         {
-            ColorImage(itemInfo);
+            ColorImage();
         }
 
         #region ICreatable implementation
@@ -24,18 +24,18 @@ namespace miniit.MERGE
         public void CreateGameObject()
         {
             GameObject itemInstance = Instantiate(prefab, rectTransform.position, rectTransform.rotation, ItemContainerAsParent);
-            itemInstance.GetComponent<Item>().ItemInfo = itemInfo;
+            itemInstance.GetComponent<Item>().StoringObjectInfo = objectInfo;
         }
 
         #endregion
 
-        #region IColorableByItem implementation
+        #region IColorableByStoringObjectInfo implementation
 
-        public void ColorImage(ItemInfo itemInfo)
+        public void ColorImage()
         {
             if (image is not null)
             {
-                image.color = itemInfo.Color;
+                image.color = objectInfo.Color;
                 image.color *= new Vector4 (1, 1, 1, intensity);
             }
         }

@@ -94,7 +94,7 @@ MonoBehaviour:
   rectTransform: {fileID: 395058674982088689}
   ItemContainerAsParent: {fileID: 0}
   prefab: {fileID: 3037231483955165291, guid: a3a186bcfa9cc9343b654f5c47eab98d, type: 3}
-  itemInfo: {fileID: 0}
+  objectInfo: {fileID: 11400000, guid: 8660377218af5c84080118f059e7ea0b, type: 2}
   intensity: 0.5
 --- !u!114 &7116847107411640269
 MonoBehaviour:

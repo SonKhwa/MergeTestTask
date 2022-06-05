@@ -5,12 +5,17 @@ using UnityEngine.UI;
 
 namespace miniit.MERGE
 {
-    public class GridFiller : MonoBehaviour, ICreatable
+    public class GridItemPlaceFiller : MonoBehaviour, ICreatable
     {
         [SerializeField] private RectTransform rectTransform;
         [SerializeField] private GridLayoutGroup gridLayoutGroup;
-        [SerializeField] private RectTransform gridContainer;
-        [SerializeField] private GameObject prefab;
+
+        [Tooltip("Parent for itemPlace instances.")]
+        [SerializeField] private RectTransform gridContainerAsParent;
+
+        [Tooltip("Parent for creatures of itemPlace.")]
+        [SerializeField] private RectTransform itemContainerAsParent;
+        [SerializeField] private ItemPlace prefab;
 
         [Tooltip("Count of cells in a row.")]
         [SerializeField] private int widthCount = 4;
@@ -53,7 +58,8 @@ namespace miniit.MERGE
 
         public void CreateGameObject()
         {
-            GameObject itemPlaceInstance = Instantiate(prefab, rectTransform.position, rectTransform.rotation, gridContainer);
+            ItemPlace itemPlaceInstance = Instantiate<ItemPlace>(prefab, rectTransform.position, rectTransform.rotation, gridContainerAsParent);
+            itemPlaceInstance.Parent = itemContainerAsParent;
         }
 
         #endregion

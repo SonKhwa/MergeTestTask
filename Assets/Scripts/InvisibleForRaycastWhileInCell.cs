@@ -7,13 +7,13 @@ namespace miniit.MERGE
 {
     public class InvisibleForRaycastWhileInCell : InvisibleForRaycast, IPointerEnterHandler, IPointerExitHandler
     {
-        [SerializeField] private Item item;
+        [SerializeField] private StoringObject storingObject;
 
         #region IPointerExitHandler implementation
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            if (eventData.pointerDrag is not null && item.ItemPlace is not null)
+            if (eventData.pointerDrag is not null && storingObject.Place is not null)
             {
                 SetRaycastTargetEnabled(false);
             } 
@@ -25,7 +25,7 @@ namespace miniit.MERGE
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            if (item.ItemPlace is not null)
+            if (storingObject.Place is not null)
             {
                 SetRaycastTargetEnabled(true);
             }

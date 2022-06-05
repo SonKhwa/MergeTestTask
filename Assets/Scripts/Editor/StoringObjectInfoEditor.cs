@@ -4,17 +4,17 @@ using UnityEngine;
 
 namespace miniit.MERGE
 {
-    [CustomEditor(typeof(ItemInfo))]
+    [CustomEditor(typeof(StoringObjectInfo))]
     [CanEditMultipleObjects]
-    public class ItemInfoEditor : ScriptableObjectEditor
+    public class StoringObjectInfoEditor : ScriptableObjectEditor
     {
-        private ItemInfo targetInfo;
+        private StoringObjectInfo targetInfo;
 
         private void OnEnable()
         {
             if (targetInfo == null)
             {
-                targetInfo = target as ItemInfo;
+                targetInfo = target as StoringObjectInfo;
             }
         }
 

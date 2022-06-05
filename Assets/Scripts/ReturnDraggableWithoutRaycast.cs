@@ -5,9 +5,9 @@ namespace miniit.MERGE
 {
     public class ReturnDraggableWithoutRaycast : DraggableWithoutRaycast
     {
-        [SerializeField] private Item item;
+        [SerializeField] private StoringObject storingObject;
         private Vector2 returnPosition;
-        private ItemPlace previousCellPlace = null;
+        private Place previousPlace = null;
 
         public override void OnBeginDrag(PointerEventData eventData)
         {
@@ -19,12 +19,7 @@ namespace miniit.MERGE
         {
             SetRaycastTargetEnabled(false);
             returnPosition = rectTransform.anchoredPosition;
-            if (item.ItemPlace is not null)
-            {
-                previousCellPlace = item.ItemPlace;
-                item.ItemPlace.StoringItem = null;
-                item.ItemPlace = null;
-            }
+            previousPlace = storingObject.Place;
         }
 
         public override void OnEndDrag(PointerEventData eventData)
@@ -35,14 +30,23 @@ namespace miniit.MERGE
         private void ReturnPreviousObjectState()
         {
             SetRaycastTargetEnabled(true);
-            if (item.ItemPlace is null)
+            if (storingObject.Place == previousPlace)
             {
-                if (previousCellPlace is not null)
-                {
-                    item.ItemPlace = previousCellPlace;
-                    item.ItemPlace.StoringItem = item;
-                }
                 rectTransform.anchoredPosition = returnPosition;
+            }
+            else
+            {
+                ClearPreviousPlace();
+            }
+        }
+
+        private void ClearPreviousPlace()
+        {
+            if (previousPlace is not null)
+            {
+                Debug.Log("Clearing previous place");
+                previousPlace.StoringObject = null;
+                previousPlace = null;
             }
         }
     }

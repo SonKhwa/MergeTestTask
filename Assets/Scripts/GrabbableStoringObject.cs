@@ -5,9 +5,9 @@ using UnityEngine.EventSystems;
 
 namespace miniit.MERGE
 {
-    public class GrabbableItem : MonoBehaviour, IDropHandler
+    public class GrabbableStoringObject : MonoBehaviour, IDropHandler
     {
-        [SerializeField] protected ItemPlace itemPlace;
+        [SerializeField] protected Place place;
 
         #region IDropHandler implementation
 
@@ -16,10 +16,10 @@ namespace miniit.MERGE
             Debug.Log("OnDrop");
             if (eventData.pointerDrag is not null)
             {
-                Item item = eventData.pointerDrag.GetComponent<Item>();
-                if (item is not null && IsFilled() == false)
+                StoringObject storingObject = eventData.pointerDrag.GetComponent<StoringObject>();
+                if (storingObject is not null && IsFilled() == false)
                 {
-                    StoreItem(item);
+                    StoreObject(storingObject);
                 }
             }
         }
@@ -28,12 +28,12 @@ namespace miniit.MERGE
 
         protected bool IsFilled()
         {
-            return itemPlace.StoringItem is not null;
+            return place.StoringObject is not null;
         }
 
-        protected void StoreItem(Item item)
+        protected void StoreObject(StoringObject storingObject)
         {
-            itemPlace.StoringItem = item;
+            place.StoringObject = storingObject;
         }
     }
 }

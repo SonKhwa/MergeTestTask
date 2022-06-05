@@ -8,18 +8,18 @@ namespace miniit.MERGE
     public class CombinationInfo : ScriptableObject
     {
         [Tooltip("Must be two parts for combination.")]
-        [SerializeField] private ItemInfo[] parts;
+        [SerializeField] private StoringObjectInfo[] parts;
 
         [Tooltip("Combination color.")]
-        [SerializeField] private ItemInfo result;
+        [SerializeField] private StoringObjectInfo result;
 
-        public ItemInfo Result
+        public StoringObjectInfo Result
         {
             get => result;
             set => result = value;
         }
 
-        public bool Equals(ItemInfo[] otherParts)
+        public bool Equals(StoringObjectInfo[] otherParts)
         {
             if (this.parts == null || this.result == null)
                 throw new System.Exception(this.name + " is not implemented!");

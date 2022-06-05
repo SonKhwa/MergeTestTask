@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace miniit.MERGE
 {
-    interface IColorableByItem
+    interface IConvertable
     {
-        abstract void ColorImage(ItemInfo itemInfo);
+        abstract void ConvertObject();
     }
 }
