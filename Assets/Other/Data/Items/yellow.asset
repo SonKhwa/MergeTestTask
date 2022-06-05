@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5901113092181780578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c0fd83e8e8afd849b549c5b7a0fe613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 0d4373e37c5039644ab708b7d62d1ca0, type: 2}
+  result: {fileID: 11400000, guid: af35f97528eaaeb479e4549626928b1c, type: 2}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f1d0fdee053f84586805da0b012677, type: 3}
+  m_Name: yellow
+  m_EditorClassIdentifier: 
+  level: 1
+  color: {r: 1, g: 1, b: 0, a: 1}
+  productName: Yellow ice cream
+  productImage: {fileID: 21300000, guid: 4612dab1665968d4e975213cba2acdc1, type: 3}
+  combinations:
+  - {fileID: 2849798127077929249}
+  - {fileID: -5901113092181780578}
+--- !u!114 &2849798127077929249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c0fd83e8e8afd849b549c5b7a0fe613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 8660377218af5c84080118f059e7ea0b, type: 2}
+  result: {fileID: 11400000, guid: 72d8c7a199881ea47ba8b451601f2952, type: 2}
