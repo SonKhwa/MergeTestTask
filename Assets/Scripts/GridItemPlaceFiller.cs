@@ -26,6 +26,11 @@ namespace miniit.MERGE
         [Tooltip("Distance between cells.")]
         [SerializeField] private float offset = 50;
 
+        private void Start()
+        {
+            FillGrid();
+        }
+
         public void FillGrid()
         {
             SetGridSettings();

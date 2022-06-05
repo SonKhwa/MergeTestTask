@@ -40,7 +40,7 @@ namespace miniit.MERGE
             }
 
             StoringObjectInfo generalStoringObjectInfo = StoringObject.StoringObjectInfo;
-            DestroyImmediate(StoringObject.gameObject);
+            Destroy(StoringObject.gameObject);
 
             CreateGameObject();
             StoringObject.StoringObjectInfo = generalStoringObjectInfo;

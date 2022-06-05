@@ -33,6 +33,11 @@ namespace miniit.MERGE
 
         protected void StoreObject(StoringObject storingObject)
         {
+            if (storingObject is not null)
+            {
+                storingObject.FreePlace();
+            }
+
             place.StoringObject = storingObject;
         }
     }

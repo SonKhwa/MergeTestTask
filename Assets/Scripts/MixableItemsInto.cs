@@ -10,14 +10,13 @@ namespace miniit.MERGE
         public override void OnDrop(PointerEventData eventData)
         {
             GameObject other = eventData.pointerDrag;
-            if (other is not null && (place.StoringObject is null || other != place.StoringObject.gameObject))
+            if (other is not null && IsSameObject(other) is false)
             {
                 Item otherItem = other.GetComponent<Item>();
                 if (otherItem is not null)
                 {
                     if (IsFilled())
                     {
-                        Debug.Log("Is filled!");
                         Item thatItem = place.StoringObject.GetComponent<Item>();
                         if (thatItem is null)
                         {
@@ -30,7 +29,7 @@ namespace miniit.MERGE
                     }
                     else
                     {
-                        Debug.Log("Is not filled!");
+                        Debug.Log("Storing item!");
                         StoreObject(otherItem);
                     }
                 }
@@ -39,6 +38,11 @@ namespace miniit.MERGE
                     Debug.Log("Both must be items!");
                 }
             }
+        }
+
+        private bool IsSameObject(GameObject other)
+        {
+            return (place.StoringObject is not null && other == place.StoringObject.gameObject);
         }
 
         private bool TryMixItems(Item thatItem, Item otherItem)
@@ -63,16 +67,9 @@ namespace miniit.MERGE
             return thatobjectInfo.FindCombination(otherobjectInfo);
         }
 
-        /// <summary>
-        /// Destroying item inside the cell and change item in drag to result of their combination.
-        /// </summary>
-        /// <param name="thatItem">Item inside the cell.</param>
-        /// <param name="otherItem">Item in drag.</param>
-        /// <param name="combination">Combination of items.</param>
-        /// 
         private void MixItems(Item thatItem, Item otherItem, CombinationInfo combination)
         {
-            DestroyImmediate(thatItem.gameObject);
+            Destroy(thatItem.gameObject);
             otherItem.StoringObjectInfo = combination.Result;
         }
     }

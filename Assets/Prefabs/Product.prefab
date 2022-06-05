@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storingObjectInfo: {fileID: 11400000, guid: 8660377218af5c84080118f059e7ea0b, type: 2}
+  place: {fileID: 0}
   image: {fileID: 8908591792763584171}
 --- !u!114 &4127235073660112787
 MonoBehaviour:

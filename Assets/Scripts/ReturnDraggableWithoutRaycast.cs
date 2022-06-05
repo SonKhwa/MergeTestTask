@@ -44,7 +44,6 @@ namespace miniit.MERGE
         {
             if (previousPlace is not null)
             {
-                Debug.Log("Clearing previous place");
                 previousPlace.StoringObject = null;
                 previousPlace = null;
             }

@@ -13,8 +13,7 @@ namespace miniit.MERGE
             get => storingObject;
             set
             {
-                Debug.Log(storingObject + " is prev! " + value + " is now!");
-                if(delayCoroutine is not null)
+                if (delayCoroutine is not null)
                 {
                     StopDoingAction();
                 }
@@ -41,20 +40,17 @@ namespace miniit.MERGE
         public void BeginDoingAction()
         {
             delayCoroutine = DoActionAfterTime(delayTimeInSeconds);
-            Debug.Log("Converting " + storingObject + " after " + delayTimeInSeconds + "sec!");
             StartCoroutine(delayCoroutine);
         }
 
         public void StopDoingAction()
         {
-            Debug.Log("Stop converting!");
             StopCoroutine(delayCoroutine);
         }
 
         public IEnumerator DoActionAfterTime(float delayTimeInSeconds)
         {
             yield return new WaitForSeconds(delayTimeInSeconds);
-            Debug.Log("Converting!");
             ConvertObject();
         }
 

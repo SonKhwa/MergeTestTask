@@ -25,11 +25,10 @@ namespace miniit.MERGE
 
         private void OnDestroy()
         {
-            Debug.Log("OnDestroy!");
             FreePlace();
         }
 
-        private void FreePlace()
+        public void FreePlace()
         {
             if (Place is not null)
             {
