@@ -40,10 +40,11 @@ namespace miniit.MERGE
             }
 
             StoringObjectInfo generalStoringObjectInfo = StoringObject.StoringObjectInfo;
-            Destroy(StoringObject.gameObject);
+            DestroyImmediate(StoringObject.gameObject);
 
             CreateGameObject();
             StoringObject.StoringObjectInfo = generalStoringObjectInfo;
+            StoringObject = storingObject;
         }
 
         #endregion
@@ -52,9 +53,9 @@ namespace miniit.MERGE
 
         public void CreateGameObject()
         {
-            T productInstance = Instantiate<T>(pathToPrefab, rectTransform.position, rectTransform.rotation, parent);
+            T storingObjectInstance = Instantiate<T>(pathToPrefab, rectTransform.position, rectTransform.rotation, parent);
  
-            StoringObject = productInstance;
+            storingObject = storingObjectInstance;
             StoringObject.Place = this;
         }
 
