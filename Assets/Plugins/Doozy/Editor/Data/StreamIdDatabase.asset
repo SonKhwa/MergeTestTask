@@ -22,5 +22,7 @@ MonoBehaviour:
       Name: OnProductCorrect
     - Category: LevelEvents
       Name: OnProductWrong
+    - Category: LoadEvents
+      Name: StartLoading
     - Category: None
       Name: None

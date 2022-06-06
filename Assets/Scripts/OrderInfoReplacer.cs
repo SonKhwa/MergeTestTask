@@ -20,6 +20,12 @@ namespace miniit.MERGE
 
         [SerializeField] private Image orderImage;
         [SerializeField] private TextMeshProUGUI orderName;
+        [SerializeField] private IntVariable scores;
+
+        private void Start()
+        {
+            scores.Value = 0;
+        }
 
         public void SetOrder(StoringObjectInfo objectInfo)
         {
@@ -28,15 +34,17 @@ namespace miniit.MERGE
             orderName.text = objectInfo.ProductName;
         }
 
-        public void ReactOnCorrectProduct()
+        public void ReactOnCorrectProduct(StoringObjectInfo objectInfo)
         {
             Debug.Log("Correct product!");
+            scores.Value += objectInfo.Level;
             SignalStream.Get(LevelEvents, OnProductCorrect).SendSignal();
         }
 
-        public void ReactOnWrongProduct()
+        public void ReactOnWrongProduct(StoringObjectInfo objectInfo)
         {
             Debug.Log("Wrong product!");
+            scores.Value -= objectInfo.Level;
             SignalStream.Get(LevelEvents, OnProductWrong).SendSignal();
         }
     }

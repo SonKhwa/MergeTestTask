@@ -32,7 +32,8 @@ namespace Doozy.Runtime.UIManager
         {
             LevelCompleted,
             LevelLost,
-            OrderPlace
+            OrderPlace,
+            Pause
         }
 
         public enum MainMenu

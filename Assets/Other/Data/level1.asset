@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: level1
   m_EditorClassIdentifier: 
   orderList:
+  - {fileID: 11400000, guid: 72d8c7a199881ea47ba8b451601f2952, type: 2}
   - {fileID: 11400000, guid: 8660377218af5c84080118f059e7ea0b, type: 2}
   - {fileID: 11400000, guid: 0d4373e37c5039644ab708b7d62d1ca0, type: 2}
   - {fileID: 11400000, guid: e35ed761163bef646a8b90f1129b2b35, type: 2}
-  - {fileID: 11400000, guid: 72d8c7a199881ea47ba8b451601f2952, type: 2}

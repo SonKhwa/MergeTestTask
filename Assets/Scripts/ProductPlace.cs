@@ -61,7 +61,7 @@ namespace miniit.MERGE
                 if (IsOrdersCompleted() is false)
                 {
                     replacer.SetOrder(ordersInfo.GetOrderList()[remainOrders.Value - 1]);
-                    replacer.ReactOnCorrectProduct();
+                    replacer.ReactOnCorrectProduct(storingObject.StoringObjectInfo);
                 }
                 else
                 {
@@ -71,7 +71,7 @@ namespace miniit.MERGE
             }
             else
             {
-                replacer.ReactOnWrongProduct();
+                replacer.ReactOnWrongProduct(storingObject.StoringObjectInfo);
             }
         }
 

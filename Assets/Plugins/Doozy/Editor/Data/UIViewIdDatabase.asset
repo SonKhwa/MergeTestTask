@@ -20,6 +20,8 @@ MonoBehaviour:
       Name: LevelLost
     - Category: Level
       Name: OrderPlace
+    - Category: Level
+      Name: Pause
     - Category: MainMenu
       Name: LoadingInterface
     - Category: MainMenu

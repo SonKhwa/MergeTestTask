@@ -14,10 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Database:
     Items:
+    - Category: LevelButtons
+      Name: Pause
+    - Category: LevelButtons
+      Name: Unpause
     - Category: MenuButton
       Name: Exit
     - Category: MenuButton
+      Name: NextLevel
+    - Category: MenuButton
       Name: Play
+    - Category: MenuButton
+      Name: Restart
     - Category: MenuButton
       Name: Settings
     - Category: None
