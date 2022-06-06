@@ -13,4 +13,14 @@ MonoBehaviour:
   m_Name: StreamIdDatabase
   m_EditorClassIdentifier: 
   Database:
-    Items: []
+    Items:
+    - Category: LevelEvents
+      Name: OnLevelCompleted
+    - Category: LevelEvents
+      Name: OnLevelLost
+    - Category: LevelEvents
+      Name: OnProductCorrect
+    - Category: LevelEvents
+      Name: OnProductWrong
+    - Category: None
+      Name: None

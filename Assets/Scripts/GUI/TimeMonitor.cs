@@ -1,12 +1,18 @@
 using UnityEngine;
 using TMPro;
+using Doozy.Runtime.Signals;
 
 namespace miniit.MERGE
 {
     public class TimeMonitor : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI timeText;
+        [Tooltip("StreamCategory of signal OnLevelLost.")]
+        [SerializeField] private string LevelEvents = nameof(LevelEvents);
 
+        [Tooltip("StreamCategory of signal OnLevelLost.")]
+        [SerializeField] private string OnLevelLost = nameof(OnLevelLost);
+
+        [SerializeField] private TextMeshProUGUI timeText;
         [SerializeField] private float timeRemaining = 60f;
         private bool timerIsRunning = true;
 
@@ -21,7 +27,9 @@ namespace miniit.MERGE
                 }
                 else
                 {
+                    
                     Debug.Log("Time has run out! Game Over!");
+                    SignalStream.Get(LevelEvents, OnLevelLost).SendSignal();
                     timeRemaining = 0;
                     timerIsRunning = false;
                 }

@@ -112,7 +112,7 @@ MonoBehaviour:
   CanBeDeleted: 1
   Passthrough: 1
   ClearGraphHistory: 0
-  Position: {x: 0, y: 106}
+  Position: {x: -0.0000013046265, y: 79.2}
   Payload:
     StreamId:
       Category: Music
@@ -238,7 +238,7 @@ MonoBehaviour:
     StreamId:
       Category: Music
       Name: Stop
-      Custom: 0
+      Custom: 1
     SignalValueType: 0
     IntegerValue: 0
     BooleanValue: 0
@@ -496,7 +496,7 @@ MonoBehaviour:
     StreamId:
       Category: Music
       Name: Stop
-      Custom: 0
+      Custom: 1
     SignalValueType: 0
     IntegerValue: 0
     BooleanValue: 0
@@ -666,7 +666,7 @@ MonoBehaviour:
     StreamId:
       Category: Music
       Name: Stop
-      Custom: 0
+      Custom: 1
     SignalValueType: 0
     IntegerValue: 0
     BooleanValue: 0
@@ -712,7 +712,7 @@ MonoBehaviour:
   CanBeDeleted: 1
   Passthrough: 1
   ClearGraphHistory: 0
-  Position: {x: -161, y: 106}
+  Position: {x: -160.8, y: 106.4}
   Trigger: 2
   SignalPayload:
     StreamId:
@@ -787,7 +787,7 @@ MonoBehaviour:
   CanBeDeleted: 1
   Passthrough: 1
   ClearGraphHistory: 0
-  Position: {x: 341, y: 207}
+  Position: {x: 339.19992, y: 207.2}
   Payload:
     StreamId:
       Category: Music

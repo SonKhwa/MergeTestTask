@@ -73,7 +73,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 077b7aa58937b7a4aad687b66566f388, type: 2}
     - {fileID: 11400000, guid: 02ca61d6b061aab4394768bdf8397536, type: 2}
     - {fileID: 11400000, guid: 260708274dfe2a14296dbe93595a690d, type: 2}
-    - {fileID: 11400000, guid: 0a4bd1dd975e195449ffd2fe0814e4ff, type: 2}
     - {fileID: 11400000, guid: 50860f6c964ce3149953850c846922c0, type: 2}
     - {fileID: 11400000, guid: 822ea418859b4534ea907e9d32a8987c, type: 2}
     - {fileID: 11400000, guid: dd6ac8599dde8f44d9af86d6e1fe5c49, type: 2}
@@ -455,7 +454,6 @@ MonoBehaviour:
       - 25
     - Category: Bounce
       Names:
-      - 01
       - 02
       - 03
       - 04

@@ -1,3 +1,4 @@
+using Doozy.Runtime.Signals;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -8,6 +9,11 @@ namespace miniit.MERGE
 {
     public class ProductPlace : ConvertablePlace<Product>, ICheckableOrderCompleted
     {
+        [Tooltip("StreamCategory of signal OnLevelCompleted.")]
+        [SerializeField] private string LevelEvents = nameof(LevelEvents);
+
+        [Tooltip("StreamCategory of signal OnLevelCompleted.")]
+        [SerializeField] private string OnLevelCompleted = nameof(OnLevelCompleted);
         [SerializeField] private OrdersInfo ordersInfo;
         [SerializeField] private IntVariable remainOrders;
         [SerializeField] private OrderInfoReplacer replacer;
@@ -55,9 +61,11 @@ namespace miniit.MERGE
                 if (IsOrdersCompleted() is false)
                 {
                     replacer.SetOrder(ordersInfo.GetOrderList()[remainOrders.Value - 1]);
+                    replacer.ReactOnCorrectProduct();
                 }
                 else
                 {
+                    SignalStream.Get(LevelEvents, OnLevelCompleted).SendSignal();
                     Debug.Log("Game Over! Level completed!");
                 }
             }

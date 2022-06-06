@@ -14,6 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Database:
     Items:
+    - Category: Level
+      Name: LevelCompleted
+    - Category: Level
+      Name: LevelLost
+    - Category: Level
+      Name: OrderPlace
     - Category: MainMenu
       Name: LoadingInterface
     - Category: MainMenu

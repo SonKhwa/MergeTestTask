@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace miniit.MERGE
 {
-    [CreateAssetMenu(fileName = "IntVariable", menuName = "My Scriptable Objects/IntVariable")]
-    public class IntVariable : ScriptableObject
+    [CreateAssetMenu(fileName = "StringVariable", menuName = "My Scriptable Objects/StringVariable")]
+    public class StringVariable : ScriptableObject
     {
 #if UNITY_EDITOR
 
@@ -11,9 +11,9 @@ namespace miniit.MERGE
         public string DeveloperDescription = "";
 
 #endif
-        [SerializeField] private int value;
+        [SerializeField] private string value;
 
-        public int Value
+        public string Value
         {
             get => value;
             set => this.value = value;
