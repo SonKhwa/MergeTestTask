@@ -9672,8 +9672,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 656.42, y: -398.47}
-  m_SizeDelta: {x: 1198.7, y: 226.8}
+  m_AnchoredPosition: {x: 656.42, y: -394.41}
+  m_SizeDelta: {x: 1198.7, y: 234.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &834805220
 MonoBehaviour:
@@ -15424,6 +15424,17 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1623410408 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 865758032391559551, guid: 17bb8eb1fc5bc8f40a52685369c1d6c1, type: 3}
+  m_PrefabInstance: {fileID: 1902770429}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0ece75c19993e4eb6fb9d656fe27f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1633898011
 GameObject:
   m_ObjectHideFlags: 0
@@ -23071,8 +23082,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 148049269}
     - target: {fileID: 7116847107411640269, guid: 17bb8eb1fc5bc8f40a52685369c1d6c1, type: 3}
+      propertyPath: Behaviours.Behaviours.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1623410408}
+    - target: {fileID: 7116847107411640269, guid: 17bb8eb1fc5bc8f40a52685369c1d6c1, type: 3}
       propertyPath: Behaviours.Behaviours.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CreateGameObject
+      value: CreateItem
       objectReference: {fileID: 0}
     - target: {fileID: 7156204899867436498, guid: 17bb8eb1fc5bc8f40a52685369c1d6c1, type: 3}
       propertyPath: m_Name
@@ -23298,7 +23313,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 331.77, y: 244.75}
+  m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2007244810
 MonoBehaviour:

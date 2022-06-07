@@ -1614,7 +1614,7 @@ MonoBehaviour:
       FromValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       ToValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       CurrentValue: {r: 0.9686275, g: 0.20784315, b: 0.39607847, a: 1}
-      Enabled: 1
+      Enabled: 0
       StartColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
@@ -4108,7 +4108,7 @@ MonoBehaviour:
       FromValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       ToValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       CurrentValue: {r: 0.9686275, g: 0.20784315, b: 0.39607847, a: 1}
-      Enabled: 1
+      Enabled: 0
       StartColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0

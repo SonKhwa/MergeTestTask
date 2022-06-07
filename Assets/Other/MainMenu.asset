@@ -114,7 +114,7 @@ MonoBehaviour:
   - {fileID: -1480014592811625061}
   - {fileID: 8193049213135097282}
   RootNode: {fileID: -2868143669999923584}
-  ActiveNode: {fileID: 8193049213135097282}
+  ActiveNode: {fileID: 0}
 --- !u!114 &8193049213135097282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,11 +158,11 @@ MonoBehaviour:
   RunUpdate: 0
   RunFixedUpdate: 0
   RunLateUpdate: 0
-  NodeState: 2
+  NodeState: 0
   CanBeDeleted: 1
   Passthrough: 0
   ClearGraphHistory: 0
-  Position: {x: 389, y: -24}
+  Position: {x: 389.8, y: -24}
   OnEnterShowViews:
   - Id:
       Category: MainMenu
