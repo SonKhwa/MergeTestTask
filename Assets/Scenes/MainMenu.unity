@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Controller: {fileID: 19254156}
   IsOn: 0
-  ToggleCommand: 0
+  ToggleCommand: 2
   NormalAnimation:
     OnPlayCallback:
       m_PersistentCalls:
@@ -246,12 +246,12 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {x: 0, y: 0, z: 0}
-      ToValue: {x: 0, y: 0, z: 0}
+      FromValue: {x: 960.00006, y: -810, z: 0}
+      ToValue: {x: 960.00006, y: -810, z: 0}
       CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
       AnimationType: 5
-      StartPosition: {x: 0, y: 0, z: 0}
+      StartPosition: {x: 960.00006, y: -810, z: 0}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 0, y: 0, z: 0}
@@ -379,7 +379,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {x: 1, y: 1, z: 1}
       ToValue: {x: 1, y: 1, z: 1}
-      CurrentValue: {x: 1.1, y: 1.1, z: 1}
+      CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 1
       StartScale: {x: 1, y: 1, z: 1}
       FromReferenceValue: 1
@@ -443,7 +443,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: 1
       ToValue: 1
-      CurrentValue: 1
+      CurrentValue: 0
       Enabled: 1
       StartAlpha: 1
       FromReferenceValue: 1
@@ -462,12 +462,12 @@ MonoBehaviour:
     OnFinishCallback:
       m_PersistentCalls:
         m_Calls: []
-    AnimationType: 6
+    AnimationType: 4
     Move:
       Settings:
-        PlayMode: 1
+        PlayMode: 0
         EaseMode: 0
-        Ease: 4
+        Ease: 1
         Curve:
           serializedVersion: 2
           m_Curve:
@@ -493,8 +493,8 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.6
-        Loops: -1
+        Duration: 0.2
+        Loops: 0
         LoopDelay: 0
         UseRandomStartDelay: 0
         UseRandomDuration: 0
@@ -516,18 +516,18 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {x: 0, y: 0, z: 0}
-      ToValue: {x: 0, y: 2, z: 0}
+      FromValue: {x: 960.00006, y: -810, z: 0}
+      ToValue: {x: 960.00006, y: -810, z: 0}
       CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
-      AnimationType: 6
-      StartPosition: {x: 0, y: 0, z: 0}
-      FromReferenceValue: 0
+      AnimationType: 4
+      StartPosition: {x: 960.00006, y: -810, z: 0}
+      FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 0, y: 0, z: 0}
       ToCustomValue: {x: 0, y: 0, z: 0}
       FromOffset: {x: 0, y: 0, z: 0}
-      ToOffset: {x: 0, y: 2, z: 0}
+      ToOffset: {x: 0, y: 0, z: 0}
       FromDirection: 0
       ToDirection: 0
     Rotate:
@@ -585,7 +585,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {x: 0, y: 0, z: 0}
       ToValue: {x: 0, y: 0, z: 0}
-      CurrentValue: {x: -0, y: 0, z: 0}
+      CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
       StartRotation: {x: -0, y: 0, z: 0}
       FromReferenceValue: 1
@@ -598,7 +598,7 @@ MonoBehaviour:
       Settings:
         PlayMode: 0
         EaseMode: 0
-        Ease: 27
+        Ease: 1
         Curve:
           serializedVersion: 2
           m_Curve:
@@ -648,16 +648,16 @@ MonoBehaviour:
         Elasticity: 1
         FadeOutShake: 0
       FromValue: {x: 1, y: 1, z: 1}
-      ToValue: {x: 1.2, y: 1.2, z: 1}
-      CurrentValue: {x: 1.3000001, y: 1.3000001, z: 1}
-      Enabled: 1
+      ToValue: {x: 1, y: 1, z: 1}
+      CurrentValue: {x: 0, y: 0, z: 0}
+      Enabled: 0
       StartScale: {x: 1, y: 1, z: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 1, y: 1, z: 1}
       ToCustomValue: {x: 1, y: 1, z: 1}
       FromOffset: {x: 0, y: 0, z: 0}
-      ToOffset: {x: 0.2, y: 0.2, z: 0}
+      ToOffset: {x: 0, y: 0, z: 0}
     Fade:
       Settings:
         PlayMode: 0
@@ -713,7 +713,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: 1
       ToValue: 1
-      CurrentValue: 1
+      CurrentValue: 0
       Enabled: 0
       StartAlpha: 1
       FromReferenceValue: 1
@@ -732,12 +732,12 @@ MonoBehaviour:
     OnFinishCallback:
       m_PersistentCalls:
         m_Calls: []
-    AnimationType: 6
+    AnimationType: 4
     Move:
       Settings:
-        PlayMode: 1
+        PlayMode: 0
         EaseMode: 0
-        Ease: 21
+        Ease: 1
         Curve:
           serializedVersion: 2
           m_Curve:
@@ -786,18 +786,18 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {x: 0, y: 0, z: 0}
-      ToValue: {x: 0, y: 8, z: 0}
+      FromValue: {x: 960.00006, y: -810, z: 0}
+      ToValue: {x: 960.00006, y: -810, z: 0}
       CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
-      AnimationType: 6
-      StartPosition: {x: 0, y: 0, z: 0}
+      AnimationType: 4
+      StartPosition: {x: 960.00006, y: -810, z: 0}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 0, y: 0, z: 0}
       ToCustomValue: {x: 0, y: 0, z: 0}
       FromOffset: {x: 0, y: 0, z: 0}
-      ToOffset: {x: 0, y: 8, z: 0}
+      ToOffset: {x: 0, y: 0, z: 0}
       FromDirection: 0
       ToDirection: 0
     Rotate:
@@ -855,7 +855,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {x: 0, y: 0, z: 0}
       ToValue: {x: 0, y: 0, z: 0}
-      CurrentValue: {x: -0, y: 0, z: 0}
+      CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
       StartRotation: {x: -0, y: 0, z: 0}
       FromReferenceValue: 1
@@ -868,7 +868,7 @@ MonoBehaviour:
       Settings:
         PlayMode: 0
         EaseMode: 0
-        Ease: 27
+        Ease: 1
         Curve:
           serializedVersion: 2
           m_Curve:
@@ -918,16 +918,16 @@ MonoBehaviour:
         Elasticity: 1
         FadeOutShake: 0
       FromValue: {x: 1, y: 1, z: 1}
-      ToValue: {x: 0.9, y: 0.9, z: 1}
-      CurrentValue: {x: 1.0209981, y: 1.0209981, z: 1}
-      Enabled: 1
+      ToValue: {x: 1, y: 1, z: 1}
+      CurrentValue: {x: 0, y: 0, z: 0}
+      Enabled: 0
       StartScale: {x: 1, y: 1, z: 1}
-      FromReferenceValue: 0
+      FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 1, y: 1, z: 1}
       ToCustomValue: {x: 1, y: 1, z: 1}
       FromOffset: {x: 0, y: 0, z: 0}
-      ToOffset: {x: -0.1, y: -0.1, z: 0}
+      ToOffset: {x: 0, y: 0, z: 0}
     Fade:
       Settings:
         PlayMode: 0
@@ -983,7 +983,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: 1
       ToValue: 1
-      CurrentValue: 1
+      CurrentValue: 0
       Enabled: 0
       StartAlpha: 1
       FromReferenceValue: 1
@@ -1005,9 +1005,9 @@ MonoBehaviour:
     AnimationType: 4
     Move:
       Settings:
-        PlayMode: 1
+        PlayMode: 0
         EaseMode: 0
-        Ease: 4
+        Ease: 1
         Curve:
           serializedVersion: 2
           m_Curve:
@@ -1033,8 +1033,8 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.6
-        Loops: -1
+        Duration: 0.2
+        Loops: 0
         LoopDelay: 0
         UseRandomStartDelay: 0
         UseRandomDuration: 0
@@ -1056,18 +1056,18 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {x: 0, y: 0, z: 0}
-      ToValue: {x: 0, y: 2, z: 0}
+      FromValue: {x: 960.00006, y: -810, z: 0}
+      ToValue: {x: 960.00006, y: -810, z: 0}
       CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
       AnimationType: 4
-      StartPosition: {x: 0, y: 0, z: 0}
-      FromReferenceValue: 0
+      StartPosition: {x: 960.00006, y: -810, z: 0}
+      FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 0, y: 0, z: 0}
       ToCustomValue: {x: 0, y: 0, z: 0}
       FromOffset: {x: 0, y: 0, z: 0}
-      ToOffset: {x: 0, y: 2, z: 0}
+      ToOffset: {x: 0, y: 0, z: 0}
       FromDirection: 0
       ToDirection: 0
     Rotate:
@@ -1125,7 +1125,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {x: 0, y: 0, z: 0}
       ToValue: {x: 0, y: 0, z: 0}
-      CurrentValue: {x: -0, y: 0, z: 0}
+      CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
       StartRotation: {x: -0, y: 0, z: 0}
       FromReferenceValue: 1
@@ -1138,7 +1138,7 @@ MonoBehaviour:
       Settings:
         PlayMode: 0
         EaseMode: 0
-        Ease: 27
+        Ease: 1
         Curve:
           serializedVersion: 2
           m_Curve:
@@ -1188,16 +1188,16 @@ MonoBehaviour:
         Elasticity: 1
         FadeOutShake: 0
       FromValue: {x: 1, y: 1, z: 1}
-      ToValue: {x: 1.1, y: 1.1, z: 1}
-      CurrentValue: {x: 1.2, y: 1.2, z: 1}
-      Enabled: 1
+      ToValue: {x: 1, y: 1, z: 1}
+      CurrentValue: {x: 0, y: 0, z: 0}
+      Enabled: 0
       StartScale: {x: 1, y: 1, z: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 1, y: 1, z: 1}
       ToCustomValue: {x: 1, y: 1, z: 1}
       FromOffset: {x: 0, y: 0, z: 0}
-      ToOffset: {x: 0.1, y: 0.1, z: 0}
+      ToOffset: {x: 0, y: 0, z: 0}
     Fade:
       Settings:
         PlayMode: 0
@@ -1253,7 +1253,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: 1
       ToValue: 1
-      CurrentValue: 1
+      CurrentValue: 0
       Enabled: 0
       StartAlpha: 1
       FromReferenceValue: 1
@@ -1272,7 +1272,7 @@ MonoBehaviour:
     OnFinishCallback:
       m_PersistentCalls:
         m_Calls: []
-    AnimationType: 5
+    AnimationType: 4
     Move:
       Settings:
         PlayMode: 0
@@ -1303,7 +1303,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.3
+        Duration: 0.2
         Loops: 0
         LoopDelay: 0
         UseRandomStartDelay: 0
@@ -1326,20 +1326,20 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {x: 0, y: 0, z: 0}
-      ToValue: {x: 0, y: 0, z: 0}
+      FromValue: {x: 960.00006, y: -810, z: 0}
+      ToValue: {x: 960.00006, y: -810, z: 0}
       CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
-      AnimationType: 5
-      StartPosition: {x: 0, y: 0, z: 0}
+      AnimationType: 4
+      StartPosition: {x: 960.00006, y: -810, z: 0}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 0, y: 0, z: 0}
       ToCustomValue: {x: 0, y: 0, z: 0}
       FromOffset: {x: 0, y: 0, z: 0}
       ToOffset: {x: 0, y: 0, z: 0}
-      FromDirection: 13
-      ToDirection: 13
+      FromDirection: 0
+      ToDirection: 0
     Rotate:
       Settings:
         PlayMode: 0
@@ -1370,7 +1370,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.3
+        Duration: 0.2
         Loops: 0
         LoopDelay: 0
         UseRandomStartDelay: 0
@@ -1396,7 +1396,7 @@ MonoBehaviour:
       FromValue: {x: 0, y: 0, z: 0}
       ToValue: {x: 0, y: 0, z: 0}
       CurrentValue: {x: 0, y: 0, z: 0}
-      Enabled: 1
+      Enabled: 0
       StartRotation: {x: -0, y: 0, z: 0}
       FromReferenceValue: 1
       ToReferenceValue: 0
@@ -1434,7 +1434,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.3
+        Duration: 0.2
         Loops: 0
         LoopDelay: 0
         UseRandomStartDelay: 0
@@ -1459,13 +1459,13 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {x: 1, y: 1, z: 1}
       ToValue: {x: 1, y: 1, z: 1}
-      CurrentValue: {x: 1, y: 1, z: 1}
-      Enabled: 1
+      CurrentValue: {x: 0, y: 0, z: 0}
+      Enabled: 0
       StartScale: {x: 1, y: 1, z: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
-      FromCustomValue: {x: 0, y: 0, z: 0}
-      ToCustomValue: {x: 0, y: 0, z: 0}
+      FromCustomValue: {x: 1, y: 1, z: 1}
+      ToCustomValue: {x: 1, y: 1, z: 1}
       FromOffset: {x: 0, y: 0, z: 0}
       ToOffset: {x: 0, y: 0, z: 0}
     Fade:
@@ -1498,7 +1498,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.3
+        Duration: 0.2
         Loops: 0
         LoopDelay: 0
         UseRandomStartDelay: 0
@@ -1523,15 +1523,15 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: 1
       ToValue: 1
-      CurrentValue: 1
-      Enabled: 1
+      CurrentValue: 0
+      Enabled: 0
       StartAlpha: 1
       FromReferenceValue: 1
-      ToReferenceValue: 1
-      FromCustomValue: 0
-      ToCustomValue: 0
+      ToReferenceValue: 0
+      FromCustomValue: 1
+      ToCustomValue: 1
       FromOffset: 0
-      ToOffset: 0.4
+      ToOffset: 0
 --- !u!114 &19254152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1546,7 +1546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Controller: {fileID: 19254156}
   IsOn: 0
-  ToggleCommand: 0
+  ToggleCommand: 2
   ColorTarget: {fileID: 19254153}
   NormalAnimation:
     OnPlayCallback:
@@ -1613,8 +1613,8 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       ToValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-      CurrentValue: {r: 0.9686275, g: 0.20784315, b: 0.39607847, a: 1}
-      Enabled: 0
+      CurrentValue: {r: 0, g: 0, b: 0, a: 0}
+      Enabled: 1
       StartColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
@@ -1693,7 +1693,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       ToValue: {r: 0.90000004, g: 0.90000004, b: 0.90000004, a: 1}
-      CurrentValue: {r: 0.9762466, g: 0.40022412, b: 0.53462934, a: 1}
+      CurrentValue: {r: 0, g: 0, b: 0, a: 0}
       Enabled: 1
       StartColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       FromReferenceValue: 1
@@ -1773,7 +1773,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       ToValue: {r: 0.7, g: 0.7, b: 0.7, a: 1}
-      CurrentValue: {r: 0.93927187, g: 0.037198782, b: 0.24768251, a: 1}
+      CurrentValue: {r: 0, g: 0, b: 0, a: 0}
       Enabled: 1
       StartColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       FromReferenceValue: 1
@@ -1852,8 +1852,8 @@ MonoBehaviour:
         Elasticity: 1
         FadeOutShake: 0
       FromValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-      ToValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-      CurrentValue: {r: 1, g: 0.17647064, b: 0.3686275, a: 1}
+      ToValue: {r: 1, g: 1, b: 1, a: 1}
+      CurrentValue: {r: 0, g: 0, b: 0, a: 0}
       Enabled: 1
       StartColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       FromReferenceValue: 1
@@ -1861,11 +1861,11 @@ MonoBehaviour:
       FromCustomValue: {r: 1, g: 1, b: 1, a: 1}
       ToCustomValue: {r: 1, g: 1, b: 1, a: 1}
       FromHueOffset: 0
-      ToHueOffset: 0
+      ToHueOffset: -0.027777778
       FromSaturationOffset: 0
       ToSaturationOffset: 0
       FromLightnessOffset: 0
-      ToLightnessOffset: 0
+      ToLightnessOffset: 0.2
       FromAlphaOffset: 0
       ToAlphaOffset: 0
   DisabledAnimation:
@@ -2675,7 +2675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Controller: {fileID: 627997427}
   IsOn: 0
-  ToggleCommand: 0
+  ToggleCommand: 2
   NormalAnimation:
     OnPlayCallback:
       m_PersistentCalls:
@@ -2740,12 +2740,12 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {x: 0, y: 0, z: 0}
-      ToValue: {x: 0, y: 0, z: 0}
+      FromValue: {x: 960.00006, y: -670, z: 0}
+      ToValue: {x: 960.00006, y: -670, z: 0}
       CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
       AnimationType: 5
-      StartPosition: {x: 0, y: 0, z: 0}
+      StartPosition: {x: 960.00006, y: -670, z: 0}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 0, y: 0, z: 0}
@@ -2873,7 +2873,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {x: 1, y: 1, z: 1}
       ToValue: {x: 1, y: 1, z: 1}
-      CurrentValue: {x: 1.1, y: 1.1, z: 1}
+      CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 1
       StartScale: {x: 1, y: 1, z: 1}
       FromReferenceValue: 1
@@ -2937,7 +2937,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: 1
       ToValue: 1
-      CurrentValue: 1
+      CurrentValue: 0
       Enabled: 1
       StartAlpha: 1
       FromReferenceValue: 1
@@ -2956,12 +2956,12 @@ MonoBehaviour:
     OnFinishCallback:
       m_PersistentCalls:
         m_Calls: []
-    AnimationType: 6
+    AnimationType: 4
     Move:
       Settings:
-        PlayMode: 1
+        PlayMode: 0
         EaseMode: 0
-        Ease: 4
+        Ease: 1
         Curve:
           serializedVersion: 2
           m_Curve:
@@ -2987,8 +2987,8 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.6
-        Loops: -1
+        Duration: 0.2
+        Loops: 0
         LoopDelay: 0
         UseRandomStartDelay: 0
         UseRandomDuration: 0
@@ -3010,18 +3010,18 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {x: 0, y: 0, z: 0}
-      ToValue: {x: 0, y: 2, z: 0}
+      FromValue: {x: 960.00006, y: -670, z: 0}
+      ToValue: {x: 960.00006, y: -670, z: 0}
       CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
-      AnimationType: 6
-      StartPosition: {x: 0, y: 0, z: 0}
-      FromReferenceValue: 0
+      AnimationType: 4
+      StartPosition: {x: 960.00006, y: -670, z: 0}
+      FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 0, y: 0, z: 0}
       ToCustomValue: {x: 0, y: 0, z: 0}
       FromOffset: {x: 0, y: 0, z: 0}
-      ToOffset: {x: 0, y: 2, z: 0}
+      ToOffset: {x: 0, y: 0, z: 0}
       FromDirection: 0
       ToDirection: 0
     Rotate:
@@ -3079,7 +3079,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {x: 0, y: 0, z: 0}
       ToValue: {x: 0, y: 0, z: 0}
-      CurrentValue: {x: -0, y: 0, z: 0}
+      CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
       StartRotation: {x: -0, y: 0, z: 0}
       FromReferenceValue: 1
@@ -3092,7 +3092,7 @@ MonoBehaviour:
       Settings:
         PlayMode: 0
         EaseMode: 0
-        Ease: 27
+        Ease: 1
         Curve:
           serializedVersion: 2
           m_Curve:
@@ -3142,16 +3142,16 @@ MonoBehaviour:
         Elasticity: 1
         FadeOutShake: 0
       FromValue: {x: 1, y: 1, z: 1}
-      ToValue: {x: 1.2, y: 1.2, z: 1}
-      CurrentValue: {x: 1.3000001, y: 1.3000001, z: 1}
-      Enabled: 1
+      ToValue: {x: 1, y: 1, z: 1}
+      CurrentValue: {x: 0, y: 0, z: 0}
+      Enabled: 0
       StartScale: {x: 1, y: 1, z: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 1, y: 1, z: 1}
       ToCustomValue: {x: 1, y: 1, z: 1}
       FromOffset: {x: 0, y: 0, z: 0}
-      ToOffset: {x: 0.2, y: 0.2, z: 0}
+      ToOffset: {x: 0, y: 0, z: 0}
     Fade:
       Settings:
         PlayMode: 0
@@ -3207,7 +3207,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: 1
       ToValue: 1
-      CurrentValue: 1
+      CurrentValue: 0
       Enabled: 0
       StartAlpha: 1
       FromReferenceValue: 1
@@ -3226,12 +3226,12 @@ MonoBehaviour:
     OnFinishCallback:
       m_PersistentCalls:
         m_Calls: []
-    AnimationType: 6
+    AnimationType: 4
     Move:
       Settings:
-        PlayMode: 1
+        PlayMode: 0
         EaseMode: 0
-        Ease: 21
+        Ease: 1
         Curve:
           serializedVersion: 2
           m_Curve:
@@ -3280,18 +3280,18 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {x: 0, y: 0, z: 0}
-      ToValue: {x: 0, y: 8, z: 0}
+      FromValue: {x: 960.00006, y: -670, z: 0}
+      ToValue: {x: 960.00006, y: -670, z: 0}
       CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
-      AnimationType: 6
-      StartPosition: {x: 0, y: 0, z: 0}
+      AnimationType: 4
+      StartPosition: {x: 960.00006, y: -670, z: 0}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 0, y: 0, z: 0}
       ToCustomValue: {x: 0, y: 0, z: 0}
       FromOffset: {x: 0, y: 0, z: 0}
-      ToOffset: {x: 0, y: 8, z: 0}
+      ToOffset: {x: 0, y: 0, z: 0}
       FromDirection: 0
       ToDirection: 0
     Rotate:
@@ -3349,7 +3349,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {x: 0, y: 0, z: 0}
       ToValue: {x: 0, y: 0, z: 0}
-      CurrentValue: {x: -0, y: 0, z: 0}
+      CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
       StartRotation: {x: -0, y: 0, z: 0}
       FromReferenceValue: 1
@@ -3362,7 +3362,7 @@ MonoBehaviour:
       Settings:
         PlayMode: 0
         EaseMode: 0
-        Ease: 27
+        Ease: 1
         Curve:
           serializedVersion: 2
           m_Curve:
@@ -3412,16 +3412,16 @@ MonoBehaviour:
         Elasticity: 1
         FadeOutShake: 0
       FromValue: {x: 1, y: 1, z: 1}
-      ToValue: {x: 0.9, y: 0.9, z: 1}
-      CurrentValue: {x: 1.0209981, y: 1.0209981, z: 1}
-      Enabled: 1
+      ToValue: {x: 1, y: 1, z: 1}
+      CurrentValue: {x: 0, y: 0, z: 0}
+      Enabled: 0
       StartScale: {x: 1, y: 1, z: 1}
-      FromReferenceValue: 0
+      FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 1, y: 1, z: 1}
       ToCustomValue: {x: 1, y: 1, z: 1}
       FromOffset: {x: 0, y: 0, z: 0}
-      ToOffset: {x: -0.1, y: -0.1, z: 0}
+      ToOffset: {x: 0, y: 0, z: 0}
     Fade:
       Settings:
         PlayMode: 0
@@ -3477,7 +3477,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: 1
       ToValue: 1
-      CurrentValue: 1
+      CurrentValue: 0
       Enabled: 0
       StartAlpha: 1
       FromReferenceValue: 1
@@ -3499,9 +3499,9 @@ MonoBehaviour:
     AnimationType: 4
     Move:
       Settings:
-        PlayMode: 1
+        PlayMode: 0
         EaseMode: 0
-        Ease: 4
+        Ease: 1
         Curve:
           serializedVersion: 2
           m_Curve:
@@ -3527,8 +3527,8 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.6
-        Loops: -1
+        Duration: 0.2
+        Loops: 0
         LoopDelay: 0
         UseRandomStartDelay: 0
         UseRandomDuration: 0
@@ -3550,18 +3550,18 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {x: 0, y: 0, z: 0}
-      ToValue: {x: 0, y: 2, z: 0}
+      FromValue: {x: 960.00006, y: -670, z: 0}
+      ToValue: {x: 960.00006, y: -670, z: 0}
       CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
       AnimationType: 4
-      StartPosition: {x: 0, y: 0, z: 0}
-      FromReferenceValue: 0
+      StartPosition: {x: 960.00006, y: -670, z: 0}
+      FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 0, y: 0, z: 0}
       ToCustomValue: {x: 0, y: 0, z: 0}
       FromOffset: {x: 0, y: 0, z: 0}
-      ToOffset: {x: 0, y: 2, z: 0}
+      ToOffset: {x: 0, y: 0, z: 0}
       FromDirection: 0
       ToDirection: 0
     Rotate:
@@ -3619,7 +3619,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {x: 0, y: 0, z: 0}
       ToValue: {x: 0, y: 0, z: 0}
-      CurrentValue: {x: -0, y: 0, z: 0}
+      CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
       StartRotation: {x: -0, y: 0, z: 0}
       FromReferenceValue: 1
@@ -3632,7 +3632,7 @@ MonoBehaviour:
       Settings:
         PlayMode: 0
         EaseMode: 0
-        Ease: 27
+        Ease: 1
         Curve:
           serializedVersion: 2
           m_Curve:
@@ -3682,16 +3682,16 @@ MonoBehaviour:
         Elasticity: 1
         FadeOutShake: 0
       FromValue: {x: 1, y: 1, z: 1}
-      ToValue: {x: 1.1, y: 1.1, z: 1}
-      CurrentValue: {x: 1.2, y: 1.2, z: 1}
-      Enabled: 1
+      ToValue: {x: 1, y: 1, z: 1}
+      CurrentValue: {x: 0, y: 0, z: 0}
+      Enabled: 0
       StartScale: {x: 1, y: 1, z: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 1, y: 1, z: 1}
       ToCustomValue: {x: 1, y: 1, z: 1}
       FromOffset: {x: 0, y: 0, z: 0}
-      ToOffset: {x: 0.1, y: 0.1, z: 0}
+      ToOffset: {x: 0, y: 0, z: 0}
     Fade:
       Settings:
         PlayMode: 0
@@ -3747,7 +3747,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: 1
       ToValue: 1
-      CurrentValue: 1
+      CurrentValue: 0
       Enabled: 0
       StartAlpha: 1
       FromReferenceValue: 1
@@ -3766,7 +3766,7 @@ MonoBehaviour:
     OnFinishCallback:
       m_PersistentCalls:
         m_Calls: []
-    AnimationType: 5
+    AnimationType: 4
     Move:
       Settings:
         PlayMode: 0
@@ -3797,7 +3797,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.3
+        Duration: 0.2
         Loops: 0
         LoopDelay: 0
         UseRandomStartDelay: 0
@@ -3820,20 +3820,20 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {x: 0, y: 0, z: 0}
-      ToValue: {x: 0, y: 0, z: 0}
+      FromValue: {x: 960.00006, y: -670, z: 0}
+      ToValue: {x: 960.00006, y: -670, z: 0}
       CurrentValue: {x: 0, y: 0, z: 0}
       Enabled: 0
-      AnimationType: 5
-      StartPosition: {x: 0, y: 0, z: 0}
+      AnimationType: 4
+      StartPosition: {x: 960.00006, y: -670, z: 0}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {x: 0, y: 0, z: 0}
       ToCustomValue: {x: 0, y: 0, z: 0}
       FromOffset: {x: 0, y: 0, z: 0}
       ToOffset: {x: 0, y: 0, z: 0}
-      FromDirection: 13
-      ToDirection: 13
+      FromDirection: 0
+      ToDirection: 0
     Rotate:
       Settings:
         PlayMode: 0
@@ -3864,7 +3864,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.3
+        Duration: 0.2
         Loops: 0
         LoopDelay: 0
         UseRandomStartDelay: 0
@@ -3890,7 +3890,7 @@ MonoBehaviour:
       FromValue: {x: 0, y: 0, z: 0}
       ToValue: {x: 0, y: 0, z: 0}
       CurrentValue: {x: 0, y: 0, z: 0}
-      Enabled: 1
+      Enabled: 0
       StartRotation: {x: -0, y: 0, z: 0}
       FromReferenceValue: 1
       ToReferenceValue: 0
@@ -3928,7 +3928,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.3
+        Duration: 0.2
         Loops: 0
         LoopDelay: 0
         UseRandomStartDelay: 0
@@ -3953,13 +3953,13 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {x: 1, y: 1, z: 1}
       ToValue: {x: 1, y: 1, z: 1}
-      CurrentValue: {x: 1, y: 1, z: 1}
-      Enabled: 1
+      CurrentValue: {x: 0, y: 0, z: 0}
+      Enabled: 0
       StartScale: {x: 1, y: 1, z: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
-      FromCustomValue: {x: 0, y: 0, z: 0}
-      ToCustomValue: {x: 0, y: 0, z: 0}
+      FromCustomValue: {x: 1, y: 1, z: 1}
+      ToCustomValue: {x: 1, y: 1, z: 1}
       FromOffset: {x: 0, y: 0, z: 0}
       ToOffset: {x: 0, y: 0, z: 0}
     Fade:
@@ -3992,7 +3992,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.3
+        Duration: 0.2
         Loops: 0
         LoopDelay: 0
         UseRandomStartDelay: 0
@@ -4017,15 +4017,15 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: 1
       ToValue: 1
-      CurrentValue: 1
-      Enabled: 1
+      CurrentValue: 0
+      Enabled: 0
       StartAlpha: 1
       FromReferenceValue: 1
-      ToReferenceValue: 1
-      FromCustomValue: 0
-      ToCustomValue: 0
+      ToReferenceValue: 0
+      FromCustomValue: 1
+      ToCustomValue: 1
       FromOffset: 0
-      ToOffset: 0.4
+      ToOffset: 0
 --- !u!114 &627997423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4040,7 +4040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Controller: {fileID: 627997427}
   IsOn: 0
-  ToggleCommand: 0
+  ToggleCommand: 2
   ColorTarget: {fileID: 627997424}
   NormalAnimation:
     OnPlayCallback:
@@ -4107,8 +4107,8 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       ToValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-      CurrentValue: {r: 0.9686275, g: 0.20784315, b: 0.39607847, a: 1}
-      Enabled: 0
+      CurrentValue: {r: 0, g: 0, b: 0, a: 0}
+      Enabled: 1
       StartColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
@@ -4187,7 +4187,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       ToValue: {r: 0.90000004, g: 0.90000004, b: 0.90000004, a: 1}
-      CurrentValue: {r: 0.9762466, g: 0.40022412, b: 0.53462934, a: 1}
+      CurrentValue: {r: 0, g: 0, b: 0, a: 0}
       Enabled: 1
       StartColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       FromReferenceValue: 1
@@ -4267,7 +4267,7 @@ MonoBehaviour:
         FadeOutShake: 0
       FromValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       ToValue: {r: 0.7, g: 0.7, b: 0.7, a: 1}
-      CurrentValue: {r: 0.93927187, g: 0.037198782, b: 0.24768251, a: 1}
+      CurrentValue: {r: 0, g: 0, b: 0, a: 0}
       Enabled: 1
       StartColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       FromReferenceValue: 1
@@ -4346,8 +4346,8 @@ MonoBehaviour:
         Elasticity: 1
         FadeOutShake: 0
       FromValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-      ToValue: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-      CurrentValue: {r: 1, g: 0.17647064, b: 0.3686275, a: 1}
+      ToValue: {r: 1, g: 1, b: 1, a: 1}
+      CurrentValue: {r: 0, g: 0, b: 0, a: 0}
       Enabled: 1
       StartColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
       FromReferenceValue: 1
@@ -4355,11 +4355,11 @@ MonoBehaviour:
       FromCustomValue: {r: 1, g: 1, b: 1, a: 1}
       ToCustomValue: {r: 1, g: 1, b: 1, a: 1}
       FromHueOffset: 0
-      ToHueOffset: 0
+      ToHueOffset: -0.027777778
       FromSaturationOffset: 0
       ToSaturationOffset: 0
       FromLightnessOffset: 0
-      ToLightnessOffset: 0
+      ToLightnessOffset: 0.2
       FromAlphaOffset: 0
       ToAlphaOffset: 0
   DisabledAnimation:
@@ -5933,7 +5933,7 @@ MonoBehaviour:
       FromValue: {x: 0, y: 0, z: 0}
       ToValue: {x: 0, y: 0, z: 0}
       CurrentValue: {x: 0, y: 0, z: 0}
-      Enabled: 1
+      Enabled: 0
       AnimationType: 1
       StartPosition: {x: 0, y: 0, z: 0}
       FromReferenceValue: 0

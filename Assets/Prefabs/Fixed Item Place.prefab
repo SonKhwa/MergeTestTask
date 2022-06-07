@@ -96,7 +96,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   MusicEvents: MusicEvents
   OnDeadItemCreated: OnDeadItemCreated
-  delayTimeInSeconds: 10
+  delayTimeInSeconds: 3
 --- !u!114 &8034537140793853092
 MonoBehaviour:
   m_ObjectHideFlags: 0
