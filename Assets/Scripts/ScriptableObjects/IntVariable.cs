@@ -18,5 +18,22 @@ namespace miniit.MERGE
             get => value;
             set => this.value = value;
         }
+
+        public void SaveValue()
+        {
+            PlayerPrefs.SetInt(name, Value);
+        }
+
+        public void LoadValue()
+        {
+            if (PlayerPrefs.HasKey(name))
+            {
+                Value = PlayerPrefs.GetInt(name);
+            }
+            else
+            {
+                PlayerPrefs.SetInt(name, 0);
+            }
+        }
     }
 }

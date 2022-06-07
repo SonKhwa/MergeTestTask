@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 namespace miniit.MERGE
 {
-    public class ItemCreator : MonoBehaviour, IColorableByStoringObjectInfo, ICreatable
+    public class ItemCreator : MonoBehaviour, IColorableByStoringObjectInfo, ICreatable<Item>
     {
         [SerializeField] private Image image;
         [SerializeField] private RectTransform rectTransform;
         [SerializeField] private RectTransform ItemContainerAsParent;
-        [SerializeField] private GameObject prefab;
+        [SerializeField] private Item prefab;
         [SerializeField] private StoringObjectInfo objectInfo;
         [SerializeField] private float intensity = 0.5f;
 
@@ -19,12 +19,18 @@ namespace miniit.MERGE
             ColorImage();
         }
 
+        public void CreateItem()
+        {
+            CreateGameObject();
+        }
+
         #region ICreatable implementation
 
-        public void CreateGameObject()
+        public Item CreateGameObject()
         {
-            GameObject itemInstance = Instantiate(prefab, rectTransform.position, rectTransform.rotation, ItemContainerAsParent);
-            itemInstance.GetComponent<Item>().StoringObjectInfo = objectInfo;
+            Item itemInstance = Instantiate<Item>(prefab, rectTransform.position, rectTransform.rotation, ItemContainerAsParent);
+            itemInstance.StoringObjectInfo = objectInfo;
+            return itemInstance;
         }
 
         #endregion

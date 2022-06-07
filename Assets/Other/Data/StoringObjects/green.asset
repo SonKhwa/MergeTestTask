@@ -31,7 +31,7 @@ MonoBehaviour:
   level: 2
   color: {r: 0, g: 0.5019608, b: 0, a: 1}
   productName: Green ice cream
-  productImage: {fileID: 21300000, guid: 4612dab1665968d4e975213cba2acdc1, type: 3}
+  productImage: {fileID: 21300000, guid: b99a357c94bee81419354230826f092e, type: 3}
   combinations:
   - {fileID: -8571737623216719479}
   - {fileID: 73178982945927628}

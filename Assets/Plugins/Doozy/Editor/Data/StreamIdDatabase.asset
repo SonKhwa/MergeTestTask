@@ -24,5 +24,19 @@ MonoBehaviour:
       Name: OnProductWrong
     - Category: LoadEvents
       Name: StartLoading
+    - Category: MusicEvents
+      Name: OnCreated
+    - Category: MusicEvents
+      Name: OnDeadItemCreated
+    - Category: MusicEvents
+      Name: OnGrabObject
+    - Category: MusicEvents
+      Name: OnMixedItems
+    - Category: MusicEvents
+      Name: OnNotGrab
+    - Category: MusicEvents
+      Name: Pause
+    - Category: MusicEvents
+      Name: Unpause
     - Category: None
       Name: None

@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace miniit.MERGE
 {
-    interface ICreatable
+    interface ICreatable<T>
     {
-        abstract void CreateGameObject();
+        abstract T CreateGameObject();
     }
 }

@@ -15,7 +15,10 @@ namespace miniit.MERGE
             set
             {
                 storingObjectInfo = value;
-                ColorImage();
+                if (value != null)
+                {
+                    ColorImage();
+                }
             }
         }
 

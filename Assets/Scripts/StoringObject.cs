@@ -23,11 +23,6 @@ namespace miniit.MERGE
             set => place = value;
         }
 
-        private void OnDestroy()
-        {
-            FreePlace();
-        }
-
         public void FreePlace()
         {
             if (Place is not null)

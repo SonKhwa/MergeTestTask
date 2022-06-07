@@ -58,15 +58,15 @@ namespace miniit.MERGE
             if (IsOrdered())
             {
                 SetNextOrder();
-                if (IsOrdersCompleted() is false)
-                {
-                    replacer.SetOrder(ordersInfo.GetOrderList()[remainOrders.Value - 1]);
-                    replacer.ReactOnCorrectProduct(storingObject.StoringObjectInfo);
-                }
-                else
+                replacer.ReactOnCorrectProduct(storingObject.StoringObjectInfo);
+                if (IsOrdersCompleted() is true)
                 {
                     SignalStream.Get(LevelEvents, OnLevelCompleted).SendSignal();
                     Debug.Log("Game Over! Level completed!");
+                }
+                else
+                {
+                    replacer.SetOrder(ordersInfo.GetOrderList()[remainOrders.Value - 1]);
                 }
             }
             else

@@ -12,7 +12,7 @@ namespace miniit.MERGE
         private Canvas canvas;
         private Vector2 previousPosition;
 
-        private void OnEnable()
+        private void Start()
         {
             canvas = GetCanvas();
         }

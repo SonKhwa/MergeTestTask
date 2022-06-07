@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace miniit.MERGE
 {
-    public class GridItemPlaceFiller : MonoBehaviour, ICreatable
+    public class GridItemPlaceFiller : MonoBehaviour, ICreatable<ItemPlace>
     {
         [SerializeField] private RectTransform rectTransform;
         [SerializeField] private GridLayoutGroup gridLayoutGroup;
@@ -61,10 +61,11 @@ namespace miniit.MERGE
 
         #region ICreatable implementation
 
-        public void CreateGameObject()
+        public ItemPlace CreateGameObject()
         {
             ItemPlace itemPlaceInstance = Instantiate<ItemPlace>(prefab, rectTransform.position, rectTransform.rotation, gridContainerAsParent);
             itemPlaceInstance.Parent = itemContainerAsParent;
+            return itemPlaceInstance;
         }
 
         #endregion

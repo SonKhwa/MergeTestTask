@@ -1,3 +1,4 @@
+using Doozy.Runtime.Signals;
 using System.Collections;
 using UnityEngine;
 
@@ -5,6 +6,11 @@ namespace miniit.MERGE
 {
     public class ItemPlace : ConvertablePlace<DeadItem>, IDelayableAction
     {
+        [Tooltip("StreamCategory of signal OnDeadItemCreated.")]
+        [SerializeField] private string MusicEvents = nameof(MusicEvents);
+
+        [Tooltip("StreamCategory of signal OnDeadItemCreated.")]
+        [SerializeField] private string OnDeadItemCreated = nameof(OnDeadItemCreated);
         [SerializeField] float delayTimeInSeconds = 5f;
         private IEnumerator delayCoroutine = null;
 
@@ -29,6 +35,7 @@ namespace miniit.MERGE
                     }
                     else
                     {
+                        SignalStream.Get(MusicEvents, OnDeadItemCreated).SendSignal();
                         Debug.Log("It is DeadItem!");
                     }
                 }

@@ -47,7 +47,7 @@ MonoBehaviour:
   level: 1
   color: {r: 1, g: 0, b: 0, a: 1}
   productName: Red ice cream
-  productImage: {fileID: 21300000, guid: 4612dab1665968d4e975213cba2acdc1, type: 3}
+  productImage: {fileID: 21300000, guid: b99a357c94bee81419354230826f092e, type: 3}
   combinations:
   - {fileID: -8519562133872526279}
   - {fileID: -2114322711036297927}

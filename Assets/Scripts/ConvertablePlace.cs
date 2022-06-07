@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace miniit.MERGE
 {
-    public abstract class ConvertablePlace<T> : Place, IConvertable, ICreatable where T : StoringObject
+    public abstract class ConvertablePlace<T> : Place, IConvertable, ICreatable<T> where T : StoringObject
     {
         [SerializeField] private T pathToPrefab;
         [SerializeField] private Transform parent = null;
@@ -39,24 +39,22 @@ namespace miniit.MERGE
                 throw new Exception("Convert wasn't stopped!");
             }
 
-            StoringObjectInfo generalStoringObjectInfo = StoringObject.StoringObjectInfo;
-            DestroyImmediate(StoringObject.gameObject);
+            T storingObjectInstance = CreateGameObject();
+            storingObjectInstance.StoringObjectInfo = StoringObject.StoringObjectInfo;
 
-            CreateGameObject();
-            StoringObject.StoringObjectInfo = generalStoringObjectInfo;
-            StoringObject = storingObject;
+            Destroy(StoringObject.gameObject);
+            StoringObject = storingObjectInstance;
         }
 
         #endregion
 
         #region ICreatable implementation
 
-        public void CreateGameObject()
+        public T CreateGameObject()
         {
             T storingObjectInstance = Instantiate<T>(pathToPrefab, rectTransform.position, rectTransform.rotation, parent);
- 
-            storingObject = storingObjectInstance;
             StoringObject.Place = this;
+            return storingObjectInstance;
         }
 
         #endregion

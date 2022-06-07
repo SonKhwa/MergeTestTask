@@ -31,7 +31,7 @@ MonoBehaviour:
   level: 2
   color: {r: 0.54509807, g: 0, b: 1, a: 1}
   productName: Purple ice cream
-  productImage: {fileID: 21300000, guid: 4612dab1665968d4e975213cba2acdc1, type: 3}
+  productImage: {fileID: 21300000, guid: b99a357c94bee81419354230826f092e, type: 3}
   combinations:
   - {fileID: 9011950578287978328}
   - {fileID: -587026938167645795}

@@ -61,15 +61,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.0037735105, g: 1, b: 0.9141961, a: 0.6313726}
+  m_Color: {r: 0.5226415, g: 0.7364132, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4612dab1665968d4e975213cba2acdc1, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d51b2b0e1e4f7a74f9fee630e6d90749, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -94,6 +94,8 @@ MonoBehaviour:
   storingObject: {fileID: 0}
   pathToPrefab: {fileID: 7337304456251960793, guid: 81f4073aa94db8c42a72a4456df5d632, type: 3}
   parent: {fileID: 0}
+  MusicEvents: MusicEvents
+  OnDeadItemCreated: OnDeadItemCreated
   delayTimeInSeconds: 10
 --- !u!114 &8034537140793853092
 MonoBehaviour:
@@ -107,4 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02b1dfcb49e19b446a54f7f938192b78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MusicEvents: MusicEvents
+  OnGrabObject: OnGrabObject
   place: {fileID: -8178341796398700939}
+  OnMixedItems: OnMixedItems
+  OnNotGrab: OnNotGrab

@@ -1,3 +1,4 @@
+using Doozy.Runtime.Signals;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,12 @@ namespace miniit.MERGE
 {
     public class MixableItemsInto : GrabbableStoringObject
     {
+        [Tooltip("StreamCategory of signal OnMixedItems.")]
+        [SerializeField] protected string OnMixedItems = nameof(OnMixedItems);
+
+        [Tooltip("StreamCategory of signal OnMixedItems.")]
+        [SerializeField] protected string OnNotGrab = nameof(OnNotGrab);
+
         public override void OnDrop(PointerEventData eventData)
         {
             GameObject other = eventData.pointerDrag;
@@ -20,15 +27,22 @@ namespace miniit.MERGE
                         Item thatItem = place.StoringObject.GetComponent<Item>();
                         if (thatItem is null)
                         {
+                            SignalStream.Get(MusicEvents, OnNotGrab).SendSignal();
                             Debug.Log("Storing object is not Item!");
                         }
                         else if (TryMixItems(place.StoringObject.GetComponent<Item>(), otherItem) is true)
                         {
+                            SignalStream.Get(MusicEvents, OnMixedItems).SendSignal();
                             StoreObject(otherItem);
+                        } 
+                        else
+                        {
+                            SignalStream.Get(MusicEvents, OnNotGrab).SendSignal();
                         }
                     }
                     else
                     {
+                        SignalStream.Get(MusicEvents, OnGrabObject).SendSignal();
                         Debug.Log("Storing item!");
                         StoreObject(otherItem);
                     }
@@ -70,6 +84,7 @@ namespace miniit.MERGE
         private void MixItems(Item thatItem, Item otherItem, CombinationInfo combination)
         {
             Destroy(thatItem.gameObject);
+            thatItem.FreePlace();
             otherItem.StoringObjectInfo = combination.Result;
         }
     }

@@ -15,7 +15,7 @@ MonoBehaviour:
   level: 2
   color: {r: 1, g: 0.64705884, b: 0, a: 1}
   productName: Orange ice cream
-  productImage: {fileID: 21300000, guid: 4612dab1665968d4e975213cba2acdc1, type: 3}
+  productImage: {fileID: 21300000, guid: b99a357c94bee81419354230826f092e, type: 3}
   combinations:
   - {fileID: 5101198073018228667}
   - {fileID: 6867487390694568}

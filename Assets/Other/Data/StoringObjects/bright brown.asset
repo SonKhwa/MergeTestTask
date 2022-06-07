@@ -15,5 +15,5 @@ MonoBehaviour:
   level: 3
   color: {r: 0.59607846, g: 0.4627451, b: 0.32941177, a: 1}
   productName: Bright brown ice cream
-  productImage: {fileID: 21300000, guid: 4612dab1665968d4e975213cba2acdc1, type: 3}
+  productImage: {fileID: 21300000, guid: b99a357c94bee81419354230826f092e, type: 3}
   combinations: []

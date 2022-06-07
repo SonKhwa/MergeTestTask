@@ -712,7 +712,7 @@ MonoBehaviour:
   CanBeDeleted: 1
   Passthrough: 1
   ClearGraphHistory: 0
-  Position: {x: -160.8, y: 106.4}
+  Position: {x: -160.79996, y: 105.60001}
   Trigger: 2
   SignalPayload:
     StreamId:

@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 namespace miniit.MERGE
 {
-    public class DelegatableDropWhileInPlace : MonoBehaviour, IDropHandler
+    public abstract class DelegatableDropWhileInPlace<T> : MonoBehaviour, IDropHandler where T : GrabbableStoringObject
     {
         [SerializeField] private StoringObject storingObject;
 
@@ -15,12 +15,12 @@ namespace miniit.MERGE
         {
             if (eventData.pointerDrag is not null && storingObject.Place is not null)
             {
-                MixableItemsInto mixableItemsInto = storingObject.Place.GetComponent<MixableItemsInto>();
-                if (mixableItemsInto is not null) 
-                { 
-                    mixableItemsInto.OnDrop(eventData);
+                T grabbableStoringObject = storingObject.Place.GetComponent<T>();
+                if (grabbableStoringObject is not null) 
+                {
+                    grabbableStoringObject.OnDrop(eventData);
                 }
-            } 
+            }
         }
 
         #endregion

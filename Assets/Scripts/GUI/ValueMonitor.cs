@@ -8,6 +8,7 @@ namespace miniit.MERGE
     {
         [SerializeField] private TextMeshProUGUI text;
         [SerializeField] private IntVariable variable;
+        [SerializeField] private bool isAlwaysUpdate = true;
         private int previousValue = 0;
 
         private void Start()
@@ -18,13 +19,13 @@ namespace miniit.MERGE
 
         private void Update()
         {
-            if (previousValue != variable.Value)
+            if (isAlwaysUpdate is true && previousValue != variable.Value)
             {
                 UpdateText();
             }
         }
 
-        private void UpdateText()
+        public void UpdateText()
         {
             text.text = variable.Value.ToString();
         }

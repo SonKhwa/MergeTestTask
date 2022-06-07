@@ -30,7 +30,7 @@ namespace miniit.MERGE
         public void SetOrder(StoringObjectInfo objectInfo)
         {
             orderImage.sprite = objectInfo.ProductImage;
-            orderImage.sprite = objectInfo.ProductImage;
+            orderImage.color = objectInfo.Color;
             orderName.text = objectInfo.ProductName;
         }
 
